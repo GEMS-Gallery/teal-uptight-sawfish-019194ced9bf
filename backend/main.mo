@@ -6,6 +6,7 @@ import HashMap "mo:base/HashMap";
 import Text "mo:base/Text";
 import Iter "mo:base/Iter";
 import Nat "mo:base/Nat";
+import Debug "mo:base/Debug";
 
 actor {
   type Project = {
@@ -34,6 +35,7 @@ actor {
       stars = 0;
     };
     projects.put(id, project);
+    Debug.print("Added project: " # debug_show(project));
     id
   };
 
@@ -42,12 +44,17 @@ actor {
       case (null) { projects.vals() };
       case (?cat) { Iter.filter(projects.vals(), func (p: Project) : Bool { p.category == cat }) };
     };
-    Iter.toArray(filteredProjects)
+    let result = Iter.toArray(filteredProjects);
+    Debug.print("Fetched projects: " # debug_show(result));
+    result
   };
 
   public func starProject(id: Nat) : async Bool {
     switch (projects.get(id)) {
-      case (null) { false };
+      case (null) {
+        Debug.print("Project not found: " # Nat.toText(id));
+        false
+      };
       case (?project) {
         let updatedProject = {
           id = project.id;
@@ -59,6 +66,7 @@ actor {
           stars = project.stars + 1;
         };
         projects.put(id, updatedProject);
+        Debug.print("Starred project: " # debug_show(updatedProject));
         true
       };
     }
