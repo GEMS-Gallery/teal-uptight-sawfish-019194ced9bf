@@ -270,14 +270,14 @@
         <aside class="sidebar">
             <h2>Categories</h2>
             <ul class="category-list">
-                <li class="category-item">
+                <li class="category-item" data-category="Corporate">
                     <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
                         <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                     </svg>
                     Corporate
                 </li>
-                <li class="category-item">
+                <li class="category-item" data-category="Creative">
                     <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
                         <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
@@ -286,7 +286,7 @@
                     </svg>
                     Creative
                 </li>
-                <li class="category-item">
+                <li class="category-item" data-category="Entertainment">
                     <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
                         <line x1="7" y1="2" x2="7" y2="22"></line>
@@ -299,28 +299,28 @@
                     </svg>
                     Entertainment
                 </li>
-                <li class="category-item">
+                <li class="category-item" data-category="Mobile">
                     <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
                         <line x1="12" y1="18" x2="12.01" y2="18"></line>
                     </svg>
                     Mobile
                 </li>
-                <li class="category-item">
+                <li class="category-item" data-category="Nonprofit">
                     <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
                         <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
                     </svg>
                     Nonprofit
                 </li>
-                <li class="category-item">
+                <li class="category-item" data-category="Personal">
                     <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
                     Personal
                 </li>
-                <li class="category-item">
+                <li class="category-item" data-category="Retail">
                     <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="9" cy="21" r="1"></circle>
                         <circle cx="20" cy="21" r="1"></circle>
@@ -328,7 +328,7 @@
                     </svg>
                     Retail
                 </li>
-                <li class="category-item">
+                <li class="category-item" data-category="Specialty">
                     <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
                         <polyline points="2 17 12 22 22 17"></polyline>
@@ -336,7 +336,7 @@
                     </svg>
                     Specialty Pages
                 </li>
-                <li class="category-item">
+                <li class="category-item" data-category="Technology">
                     <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                         <line x1="8" y1="21" x2="16" y2="21"></line>
@@ -344,13 +344,13 @@
                     </svg>
                     Technology
                 </li>
-                <li class="category-item">
+                <li class="category-item" data-category="Wedding">
                     <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                     Wedding
                 </li>
-                <li class="category-item">
+                <li class="category-item" data-category="Miscellaneous">
                     <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="10"></circle>
                         <line x1="12" y1="8" x2="12" y2="16"></line>
@@ -368,69 +368,92 @@
                 <div class="tab">STARRED</div>
             </div>
     
-            <div class="projects">
-                <div class="project-card">
-                    <div class="project-image">C</div>
-                    <div class="project-info">
-                        <div class="project-title">
-                            <h3>Corporate Dashboard</h3>
-                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                        </div>
-                        <span class="project-category">Corporate</span>
-                        <div class="project-author">
-                            <div class="author-avatar"></div>
-                            <span>John Smith</span>
-                        </div>
-                        <div class="project-actions">
-                            <button class="project-action">
-                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                                GitHub
-                            </button>
-                            <button class="project-action">
-                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
-                                Copy
-                            </button>
-                            <button class="project-action">
-                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                                Comment
-                            </button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="project-card">
-                    <div class="project-image">A</div>
-                    <div class="project-info">
-                        <div class="project-title">
-                            <h3>Artist Portfolio</h3>
-                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                        </div>
-                        <span class="project-category">Creative</span>
-                        <div class="project-author">
-                            <div class="author-avatar"></div>
-                            <span>Emma Johnson</span>
-                        </div>
-                        <div class="project-actions">
-                            <button class="project-action">
-                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                                GitHub
-                            </button>
-                            <button class="project-action">
-                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
-                                Copy
-                            </button>
-                            <button class="project-action">
-                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                                Comment
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            <div class="projects" id="projects-container">
+                <!-- Project cards will be dynamically inserted here -->
             </div>
         </main>
     </div>
     
+    <script src="https://unpkg.com/@dfinity/agent/lib/index.js"></script>
     <script>
+        const canisterId = 'YOUR_BACKEND_CANISTER_ID';
+        const agent = new window.ic.HttpAgent();
+        const backend = window.ic.createActor(canisterId, {
+            agent,
+            interfaceFactory: ({ IDL }) => {
+                return IDL.Service({
+                    getProjects: IDL.Func([IDL.Opt(IDL.Text)], [IDL.Vec(IDL.Record({
+                        id: IDL.Nat,
+                        title: IDL.Text,
+                        category: IDL.Text,
+                        description: IDL.Opt(IDL.Text),
+                        imageUrl: IDL.Opt(IDL.Text),
+                        author: IDL.Text,
+                        stars: IDL.Nat
+                    }))], ['query'])
+                });
+            }
+        });
+
+        async function fetchProjects(category = null) {
+            try {
+                const projects = await backend.getProjects(category ? [category] : []);
+                displayProjects(projects);
+            } catch (error) {
+                console.error('Error fetching projects:', error);
+            }
+        }
+
+        function displayProjects(projects) {
+            const container = document.getElementById('projects-container');
+            container.innerHTML = '';
+            projects.forEach(project => {
+                const card = createProjectCard(project);
+                container.appendChild(card);
+            });
+        }
+
+        function createProjectCard(project) {
+            const card = document.createElement('div');
+            card.className = 'project-card';
+            card.innerHTML = `
+                <div class="project-image">${project.title[0]}</div>
+                <div class="project-info">
+                    <div class="project-title">
+                        <h3>${project.title}</h3>
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    </div>
+                    <span class="project-category">${project.category}</span>
+                    <div class="project-author">
+                        <div class="author-avatar"></div>
+                        <span>${project.author}</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="project-action">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            GitHub
+                        </button>
+                        <button class="project-action">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+                            Copy
+                        </button>
+                        <button class="project-action">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                            Comment
+                        </button>
+                    </div>
+                </div>
+            `;
+            return card;
+        }
+
+        document.querySelectorAll('.category-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const category = item.dataset.category;
+                fetchProjects(category);
+            });
+        });
+
         document.querySelectorAll('.tab').forEach(tab => {
             tab.addEventListener('click', () => {
                 document.querySelector('.tab.active').classList.remove('active');
@@ -438,6 +461,9 @@
                 // Add logic to switch content here
             });
         });
+
+        // Initial load of all projects
+        fetchProjects();
     </script>
     </body>
     </html>
