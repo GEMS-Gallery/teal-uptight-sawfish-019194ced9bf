@@ -1,0 +1,15 @@
+type Project = 
+ record {
+   author: text;
+   category: text;
+   description: opt text;
+   id: nat;
+   imageUrl: opt text;
+   stars: nat;
+   title: text;
+ };
+service : {
+  addProject: (text, text, opt text, opt text, text) -> (nat);
+  getProjects: (opt text) -> (vec Project) query;
+  starProject: (nat) -> (bool);
+}
